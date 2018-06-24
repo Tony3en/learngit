@@ -41,6 +41,10 @@ git reflog //查看历史命令 确定回到未来的那个版本的版本号(co
 关于stage-(缓存区)
 git add ->进入stage(缓存区状态) -->git commit -->HEAD 提交到分支 --> working tree clean
 
-9.撤销修改 checkout
+9.撤销修改 checkout reset(reset-->7.版本回退)
+    1.未进入缓存区(unstage->git checkout -- file  )放弃所有修改.(命令中 -- 很重要)
+    2.已经添加进缓存区 即(after git add -> git reset HEAD file ->back to 1. git checkout -- file )
+    3.已经修改到版本库 即(after git commit -> bakc to 7.版本回退  git reset --hard HEAD^)
+
 
 
