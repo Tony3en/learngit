@@ -16,4 +16,6 @@ sshkey
     git remote add origin git@github.com:name/learngit.git
 
 6.推送到远程库中 //-u 是将本地master 推送到远程新的master分支，并且关联
-git push -u origin master
+    git push -u origin master
+7.本地提交后，同步到远程repository
+    git push origin master
