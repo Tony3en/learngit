@@ -24,3 +24,12 @@ git commit -m "message"
 //回退
 before git add =>   git checkout -- filename   //discard changes in working directory
 after git add =>    git reset HEAD filename  // to unstage
+
+
+7.版本回退
+git reset --hard HEAD^(HEAD^之前版本 HEAD^^之前两个版本  HEAD~100)
+git reset --hard commit_id
+
+git log //查看历史 确定回到历史的版本号(commit_id)
+git log --pretty=oneline //一行展示
+git reflog //查看历史命令 确定回到未来的那个版本的版本号(commit_id)
