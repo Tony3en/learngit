@@ -36,3 +36,11 @@ git reset --hard commit_id
 git log //查看历史 确定回到历史的版本号(commit_id)
 git log --pretty=oneline //一行展示
 git reflog //查看历史命令 确定回到未来的那个版本的版本号(commit_id)
+
+8.管理修改
+关于stage-(缓存区)
+git add ->进入stage(缓存区状态) -->git commit -->HEAD 提交到分支 --> working tree clean
+
+9.撤销修改 checkout
+
+
