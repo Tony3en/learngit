@@ -1,0 +1,13 @@
+sshkey
+1.判断是否存在
+    cat ~/.ssh/id_rsa.pub
+(2 if not )
+2.
+    ssh-keygen -t rsa -C "example@email.com"
+3.获取sshkey
+    cat ~/.ssh/id_rsa.pub
+4.
+    复制公钥
+    windows: clip < ~/.ssh/id_rsa.pub
+    mac:    pbcopy < ~/.ssh/id_rsa.pub
+    
